@@ -21,7 +21,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7;
-    color: #424242;
+    color: #1a1a1a;
     box-sizing: border-box; 
     background-color: #fafafa;
     overflow-x: hidden;
@@ -55,11 +55,6 @@ section {
     font-weight: 700;
     font-size: 2.5rem;
     transition: color .6s ease-in-out;
-}
-
-.fill {
-    background-color: white;
-    color: black;
 }
 
 .hero-section {
@@ -171,12 +166,6 @@ section {
     padding: 2rem;
     cursor: pointer;
 }
-  
-
-.section-first {
-    height: 150vh;
-    background-color: #f5f5f5;
-}
 
 ::selection {
     background-color: rgba(102, 227, 252, 1);
@@ -213,4 +202,48 @@ section {
 
 .visible {
     display: block;
+}
+
+.section-first {
+    height: 100vh;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.section-first-text-box {
+    overflow: hidden;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-first-primary {
+    font-size: calc(3vw + 2vh);
+    text-transform: lowercase;
+    letter-spacing: .5rem;
+    line-height: 1;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-first-secondary {
+    padding-top: 4rem;
+    letter-spacing: .5rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: calc(1vw + 1.2vh);
+    animation: moveInRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.section-first-coffe {
+    width: 40vw;
+    position: absolute;
+    left: 0;
+    top: 90%;
+    transform: translateY(-50%);
+    opacity: .45;
 }
